@@ -21,7 +21,7 @@ var Yinsh = {
 
     GUI: {
         Board: function (canvas, context) {
-            // this.canvas = canvas;
+            this.canvas = canvas;
             this.context = context;
             this.delta_x = 0;
             this.delta_y = 0;
@@ -34,7 +34,7 @@ var Yinsh = {
         compute_deltas: function (board) {
             board.offset = 30;
             board.delta_x = (board.width - 2 * board.offset) / 10.;
-            // board.delta_y = board.delta_x;
+            board.delta_y = board.delta_x;
             board.delta_xy = board.delta_y / 2;
         },
 
@@ -122,4 +122,4 @@ var Yinsh = {
         }
     }
 
-}; // namespace Yinsh
+}; // namespace YinshGui
