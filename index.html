@@ -1,17 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <script type="text/javascript" src="scripts/yinsh/board.js"> </script>
+    <script type="text/javascript" src="scripts/yinsh.js"> </script>
     <script type="text/javascript">
         window.onload = function(){
             var canvas = document.getElementById("board");
             var context = canvas.getContext("2d");
-            draw(canvas, context);
+            var engine = new Yinsh.Engine(Yinsh.GameType.BLITZ, Yinsh.Color.BLACK);
+            var other = new Yinsh.RandomPlayer(Yinsh.Color.WHITE, engine);
+            var gui = new Yinsh.GUI(canvas, context, engine, other);
         };
     </script>
 </head>
 <body>
-<canvas id="board" width="600" height="600">
+<canvas id="board" width="600" height="600" style="position: absolute;">
 </canvas>
 </body>
 </html>
