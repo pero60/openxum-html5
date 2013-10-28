@@ -1,21 +1,22 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <script type="text/javascript" src="scripts/yinsh/Yinsh.js"> </script>
-    <script type="text/javascript" src="scripts/yinsh/Constants.js"> </script>
-    <script type="text/javascript" src="scripts/yinsh/Coordinates.js"> </script>
-    <script type="text/javascript" src="scripts/yinsh/Engine.js"> </script>
-    <script type="text/javascript" src="scripts/yinsh/GuiPlayer.js"> </script>
-    <script type="text/javascript" src="scripts/yinsh/Intersection.js"> </script>
-    <script type="text/javascript" src="scripts/yinsh/Manager.js"> </script>
-    <script type="text/javascript" src="scripts/yinsh/RemotePlayer.js"> </script>
+    <script type="text/javascript" src="scripts/yinsh/Yinsh.js"></script>
+    <script type="text/javascript" src="scripts/yinsh/Constants.js"></script>
+    <script type="text/javascript" src="scripts/yinsh/Coordinates.js"></script>
+    <script type="text/javascript" src="scripts/yinsh/Engine.js"></script>
+    <script type="text/javascript" src="scripts/yinsh/GuiPlayer.js"></script>
+    <script type="text/javascript" src="scripts/yinsh/Intersection.js"></script>
+    <script type="text/javascript" src="scripts/yinsh/Manager.js"></script>
+    <script type="text/javascript" src="scripts/yinsh/RemotePlayer.js"></script>
     <script type="text/javascript">
-        window.onload = function(){
+        window.onload = function () {
             var canvas = document.getElementById("board");
+            var status = document.getElementById("markerNumber");
             var engine = new Yinsh.Engine(Yinsh.GameType.BLITZ, Yinsh.Color.BLACK);
             var gui = new Yinsh.GuiPlayer(Yinsh.Color.BLACK, engine);
             var other = new Yinsh.RandomPlayer(Yinsh.Color.WHITE, engine);
-            var manager = new Yinsh.Manager(engine, gui, other);
+            var manager = new Yinsh.Manager(engine, gui, other, status);
 
             gui.set_canvas(canvas);
             gui.set_manager(manager);
@@ -23,7 +24,18 @@
     </script>
 </head>
 <body>
-<canvas id="board" width="600" height="600" style="position: absolute;">
-</canvas>
+<form name="global">
+<table>
+    <tr>
+        <td>
+            Marker number: <input type="text" name="geo_poi" value="" id="markerNumber" />
+        </td>
+        <td>
+            <canvas id="board" width="600" height="600" style="position: absolute;">
+            </canvas>
+        </td>
+    </tr>
+</table>
+</form>
 </body>
 </html>

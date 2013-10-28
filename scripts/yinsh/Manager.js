@@ -1,4 +1,4 @@
-Yinsh.Manager = function (engine, gui_player, other_player) {
+Yinsh.Manager = function (engine, gui_player, other_player, status) {
 
 // public methods
     this.play = function () {
@@ -34,6 +34,7 @@ Yinsh.Manager = function (engine, gui_player, other_player) {
             play_other();
             gui.draw();
         }
+        status.setAttribute("value", engine.available_marker_number());
     };
 
 // private methods
@@ -62,4 +63,5 @@ Yinsh.Manager = function (engine, gui_player, other_player) {
     var engine = engine;
     var gui = gui_player;
     var other = other_player;
+    var status = status;
 };
