@@ -552,7 +552,7 @@ var Yinsh = {
                 removed_white_ring_number;
         };
 
-        this.select_row = function(coordinates, color) {
+        this.select_row = function (coordinates, color) {
             var rows = this.get_rows(color);
 
             //TODO: to finish
@@ -619,7 +619,7 @@ var Yinsh = {
                         l = (origin.letter().charCodeAt(0) - 'A'.charCodeAt(0)) + 1;
                         state.no_vacant = false;
                         while (l < (destination.letter().charCodeAt(0) - 'A'.charCodeAt(0)) && state.ok) {
-                            state = verify_intersection(l, n, state);
+                            state = verify_intersection(letters[l], n, state);
                             ++l;
                             ++n;
                         }
@@ -627,8 +627,8 @@ var Yinsh = {
                         n = origin.number() - 1;
                         l = (origin.letter().charCodeAt(0) - 'A'.charCodeAt(0)) - 1;
                         state.no_vacant = false;
-                        while (l > (destination.letter().charCodeAt(0) - 'A'.charCodeAt(0)) & state.ok) {
-                            state = verify_intersection(l, n, state);
+                        while (l > (destination.letter().charCodeAt(0) - 'A'.charCodeAt(0)) && state.ok) {
+                            state = verify_intersection(letters[l], n, state);
                             --l;
                             --n;
                         }
@@ -766,33 +766,29 @@ var Yinsh = {
         };
 
         var remove_black_ring = function (coordinates) {
+            var list = [];
             var i = 0;
-            var found = false;
 
-            while (i < placed_black_ring_coordinates.length && !found) {
-                found = placed_black_ring_coordinates[i] == coordinates;
-                if (!found) {
-                    ++i;
+            while (i < placed_black_ring_coordinates.length) {
+                if (placed_black_ring_coordinates[i].hash() != coordinates.hash()) {
+                    list.push(placed_black_ring_coordinates[i]);
                 }
+                ++i;
             }
-            if (found) {
-                delete placed_black_ring_coordinates[i];
-            }
+            placed_black_ring_coordinates = list;
         };
 
         var remove_white_ring = function (coordinates) {
+            var list = [];
             var i = 0;
-            var found = false;
 
-            while (i < placed_white_ring_coordinates.length && !found) {
-                found = placed_white_ring_coordinates[i] == coordinates;
-                if (!found) {
-                    ++i;
+            while (i < placed_white_ring_coordinates.length) {
+                if (placed_white_ring_coordinates[i].hash() != coordinates.hash()) {
+                    list.push(placed_white_ring_coordinates[i]);
                 }
+                ++i;
             }
-            if (found) {
-                delete placed_white_ring_coordinates[i];
-            }
+            placed_white_ring_coordinates = list;
         };
 
         var remove_marker = function (letter, number) {
@@ -918,14 +914,67 @@ var Yinsh = {
         }
     },
 
-// *********
-// GUI class
+// ***************
+// GuiPlayer class
 
-    GUI: function (canvas, ctxt, engine, other) {
+    GuiPlayer: function (color, engine) {
 
 // public methods
+        this.clear_selected_ring = function () {
+            selected_ring = new Yinsh.Coordinates('X', -1);
+        };
+
+        this.clear_selected_row = function () {
+            selected_row = [];
+        };
+
+        this.color = function () {
+            return mycolor;
+        };
+
+        this.draw = function () {
+            compute_deltas();
+
+            context.lineWidth = 1.;
+
+            // background
+            context.rect(0, 0, canvas.width, canvas.height);
+            context.fillStyle = "#ffffff";
+            context.fill();
+            context.stroke();
+
+            draw_grid();
+            draw_coordinates();
+            draw_state();
+
+            if (engine.phase() == Yinsh.Phase.MOVE_RING && selected_ring.is_valid()) {
+                draw_possible_moving();
+            }
+        };
+
         this.engine = function () {
             return engine;
+        };
+
+        this.get_selected_coordinates = function () {
+            return selected_coordinates;
+        };
+
+        this.get_selected_ring = function () {
+            return selected_ring;
+        };
+
+        this.set_canvas = function (c) {
+            canvas = c;
+            context = c.getContext("2d");
+            height = canvas.height;
+            width = canvas.width;
+            canvas.addEventListener("click", onClick, true);
+            this.draw();
+        };
+
+        this.set_manager = function (m) {
+            manager = m;
         };
 
 // private methods
@@ -988,27 +1037,6 @@ var Yinsh = {
                 (number - 1) * delta_y;
 
             return [x, y];
-        };
-
-        var draw = function () {
-            compute_deltas();
-
-            context.lineWidth = 1.;
-
-            // background
-            context.rect(0, 0, canvas.width, canvas.height);
-            context.fillStyle = "#ffffff";
-            context.fill();
-            context.stroke();
-
-            draw_grid();
-            draw_coordinates();
-            draw_state();
-
-            if (engine.phase() == Yinsh.Phase.MOVE_RING && selected_ring.is_valid()) {
-                draw_possible_moving();
-            }
-
         };
 
         var draw_coordinates = function () {
@@ -1150,8 +1178,6 @@ var Yinsh = {
                         var alpha_1, beta_1;
                         var alpha_2, beta_2;
 
-                        console.log("row = " + begin.letter() + begin.number() + "=>" + end.letter() + end.number());
-
                         pt1 = compute_coordinates(begin.letter().charCodeAt(0), begin.number());
                         pt2 = compute_coordinates(end.letter().charCodeAt(0), end.number());
 
@@ -1256,28 +1282,34 @@ var Yinsh = {
             var y = event.clientY - canvas.offsetTop;
             var letter = compute_letter(x, y);
             var number = compute_number(x, y);
+            var ok = false;
 
             if (letter != 'X' && number != -1 &&
                 engine.exist_intersection(letter, number)) {
                 if (engine.phase() == Yinsh.Phase.PUT_RING &&
                     engine.intersection_state(letter, number) == Yinsh.State.VACANT) {
                     selected_coordinates = new Yinsh.Coordinates(letter, number);
+                    ok = true;
                 } else if (engine.phase() == Yinsh.Phase.PUT_MARKER &&
                     ((engine.intersection_state(letter, number) == Yinsh.State.BLACK_RING &&
                         engine.current_color() == Yinsh.Color.BLACK) ||
                         (engine.intersection_state(letter, number) == Yinsh.State.WHITE_RING &&
                             engine.current_color() == Yinsh.Color.WHITE))) {
                     selected_coordinates = new Yinsh.Coordinates(letter, number);
+                    selected_ring = selected_coordinates;
+                    ok = true;
                 } else if (engine.phase() == Yinsh.Phase.MOVE_RING) {
                     if (selected_ring.is_valid()) {
                         if (engine.verify_moving(selected_ring,
                             new Yinsh.Coordinates(letter, number))) {
                             selected_coordinates = new Yinsh.Coordinates(letter, number);
+                            ok = true;
                         }
                     }
                 } else if (engine.phase() == Yinsh.Phase.REMOVE_ROWS_AFTER ||
                     engine.phase() == Yinsh.Phase.REMOVE_ROWS_BEFORE) {
                     selected_coordinates = new Yinsh.Coordinates(letter, number);
+                    ok = true;
                 } else if ((engine.phase() == Yinsh.Phase.REMOVE_RING_AFTER ||
                     engine.phase() == Yinsh.Phase.REMOVE_RING_BEFORE) &&
                     ((engine.intersection_state(letter, number) == Yinsh.State.BLACK_RING &&
@@ -1285,20 +1317,49 @@ var Yinsh = {
                         (engine.intersection_state(letter, number) == Yinsh.State.WHITE_RING &&
                             engine.current_color() == Yinsh.Color.WHITE))) {
                     selected_coordinates = new Yinsh.Coordinates(letter, number);
+                    ok = true;
                 }
             }
-            play();
+            if (ok) {
+                manager.play();
+            }
         };
 
-        var play = function() {
+// private attributes
+        var engine = engine;
+        var mycolor = color;
+
+        var canvas;
+        var context;
+        var manager;
+        var height;
+        var width;
+
+        var tolerance = 15;
+        var delta_x = 0;
+        var delta_y = 0;
+        var delta_xy = 0;
+        var offset = 0;
+
+        var selected_coordinates = new Yinsh.Coordinates('X', -1);
+        var selected_ring = new Yinsh.Coordinates('X', -1);
+        var selected_row = [];
+    },
+
+// *************
+// Manager class
+
+    Manager: function (engine, gui_player, other_player) {
+
+// public methods
+        this.play = function () {
             if (engine.phase() == Yinsh.Phase.PUT_RING) {
-                engine.put_ring(selected_coordinates, engine.current_color());
+                engine.put_ring(gui.get_selected_coordinates(), engine.current_color());
             } else if (engine.phase() == Yinsh.Phase.PUT_MARKER) {
-                engine.put_marker(selected_coordinates, engine.current_color());
-                selected_ring = selected_coordinates;
+                engine.put_marker(gui.get_selected_coordinates(), engine.current_color());
             } else if (engine.phase() == Yinsh.Phase.MOVE_RING) {
-                engine.move_ring(selected_ring, selected_coordinates);
-                selected_ring = new Yinsh.Coordinates('X', -1);
+                engine.move_ring(gui.get_selected_ring(), gui.get_selected_coordinates());
+                gui.clear_selected_ring();
                 if (engine.get_rows(engine.current_color()).length == 0) {
                     engine.remove_no_row();
                     if (engine.get_rows(engine.current_color()).length == 0) {
@@ -1307,32 +1368,32 @@ var Yinsh = {
                 }
             } else if (engine.phase() == Yinsh.Phase.REMOVE_ROWS_AFTER ||
                 engine.phase() == Yinsh.Phase.REMOVE_ROWS_BEFORE) {
-                engine.remove_row(engine.select_row(selected_coordinates,
+                engine.remove_row(engine.select_row(gui.get_selected_coordinates(),
                     engine.current_color()), engine.current_color());
-                selected_row = [];
+                gui.clear_selected_row();
             } else if (engine.phase() == Yinsh.Phase.REMOVE_RING_AFTER ||
-                    engine.phase() == Yinsh.Phase.REMOVE_RING_BEFORE) {
-                engine.remove_ring(selected_coordinates, engine.current_color());
+                engine.phase() == Yinsh.Phase.REMOVE_RING_BEFORE) {
+                engine.remove_ring(gui.get_selected_coordinates(), engine.current_color());
                 if (engine.phase() == Yinsh.Phase.REMOVE_ROWS_BEFORE) {
                     if (engine.get_rows(engine.current_color()).length == 0) {
                         engine.remove_no_row();
                     }
                 }
             }
-            draw();
-            if (engine.current_color() != mycolor) {
+            gui.draw();
+            if (engine.current_color() != gui.color()) {
                 play_other();
-                draw();
+                gui.draw();
             }
         };
 
+// private methods
         var play_other = function () {
             if (engine.phase() == Yinsh.Phase.PUT_RING) {
                 other.put_ring();
             } else if (engine.phase() == Yinsh.Phase.REMOVE_ROWS_BEFORE) {
                 other.remove_rows();
                 other.remove_ring();
-                selected_row = [];
             } else if (engine.phase() == Yinsh.Phase.PUT_MARKER) {
                 other.move_ring(other.put_marker());
                 if (engine.get_rows(engine.current_color()).length == 0) {
@@ -1349,30 +1410,13 @@ var Yinsh = {
             }
         };
 
-// private attributes
-        var canvas = canvas;
-        var context = ctxt;
         var engine = engine;
-        var mycolor = engine.current_color();
-        var other = other;
-
-        var tolerance = 15;
-        var delta_x = 0;
-        var delta_y = 0;
-        var delta_xy = 0;
-        var offset = 0;
-        var height = canvas.height;
-        var width = canvas.width;
-        var selected_coordinates = new Yinsh.Coordinates('X', -1);
-        var selected_ring = new Yinsh.Coordinates('X', -1);
-        var selected_row = [];
-
-        canvas.addEventListener("click", onClick, true);
-        draw();
+        var gui = gui_player;
+        var other = other_player;
     },
 
-// *********
-// GUI class
+// ******************
+// RamdomPlayer class
 
     RandomPlayer: function (color, engine) {
 
@@ -1386,7 +1430,7 @@ var Yinsh = {
                 engine.move_ring(origin, ring_coordinates);
                 return ring_coordinates;
             } else {
-                return new Coordinates('X', -1);
+                return new Yinsh.Coordinates('X', -1);
             }
         };
 
