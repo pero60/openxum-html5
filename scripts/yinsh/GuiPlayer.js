@@ -358,9 +358,25 @@ Yinsh.GuiPlayer = function (color, engine) {
         draw_rows();
     };
 
+    var find_pos = function(obj) {
+        var left = 0, top = 0;
+
+        if (obj.offsetParent) {
+            do {
+                left += obj.offsetLeft;
+                top += obj.offsetTop;
+            } while (obj = obj.offsetParent);
+            left -= document.documentElement.scrollLeft + document.body.scrollLeft;
+            top -= document.documentElement.scrollTop + document.body.scrollTop;
+            return { x: left, y: top };
+        }
+        return undefined;
+    }
+
     var onClick = function (event) {
-        var x = event.clientX - canvas.offsetLeft;
-        var y = event.clientY - canvas.offsetTop;
+        var pos = find_pos(canvas);
+        var x = event.clientX - pos.x;
+        var y = event.clientY - pos.y;
         var letter = compute_letter(x, y);
         var number = compute_number(x, y);
         var ok = false;
