@@ -26,6 +26,7 @@ App::uses('AppController', 'Controller');
 class PagesController extends AppController {
 
     public $uses = array();
+    public $helpers = array('Session');
 
     public function beforeFilter()
     {
