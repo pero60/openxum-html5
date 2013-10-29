@@ -70,7 +70,7 @@ Yinsh.Engine = function (type, color) {
             while (n <= Yinsh.end_number[letter.charCodeAt(0) - 'A'.charCodeAt(0)] && state.ok) {
                 state = verify_intersection(letter, n, state);
                 if ((state.ok && !state.no_vacant) || (!state.ok && state.no_vacant)) {
-                    list.push(get_intersection(letter, n));
+                    list.push(get_intersection(letter, n).coordinates());
                 }
                 ++n;
             }
@@ -83,7 +83,7 @@ Yinsh.Engine = function (type, color) {
             while (n >= Yinsh.begin_number[letter.charCodeAt(0) - 'A'.charCodeAt(0)] && state.ok) {
                 state = verify_intersection(letter, n, state);
                 if ((state.ok && !state.no_vacant) || (!state.ok && state.no_vacant)) {
-                    list.push(get_intersection(letter, n));
+                    list.push(get_intersection(letter, n).coordinates());
                 }
                 --n;
             }
@@ -96,7 +96,7 @@ Yinsh.Engine = function (type, color) {
             while (l <= (Yinsh.end_letter[number - 1].charCodeAt(0) - 'A'.charCodeAt(0)) && state.ok) {
                 state = verify_intersection(letters[l], number, state);
                 if ((state.ok && !state.no_vacant) || (!state.ok && state.no_vacant)) {
-                    list.push(get_intersection(letters[l], number));
+                    list.push(get_intersection(letters[l], number).coordinates());
                 }
                 ++l;
             }
@@ -109,7 +109,7 @@ Yinsh.Engine = function (type, color) {
             while (l >= (Yinsh.begin_letter[number - 1].charCodeAt(0) - 'A'.charCodeAt(0)) && state.ok) {
                 state = verify_intersection(letters[l], number, state);
                 if ((state.ok && !state.no_vacant) || (!state.ok && state.no_vacant)) {
-                    list.push(get_intersection(letters[l], number));
+                    list.push(get_intersection(letters[l], number).coordinates());
                 }
                 --l;
             }
@@ -124,7 +124,7 @@ Yinsh.Engine = function (type, color) {
                 l <= (Yinsh.end_letter[n - 1].charCodeAt(0) - 'A'.charCodeAt(0)) && state.ok) {
                 state = verify_intersection(letters[l], n, state);
                 if ((state.ok && !state.no_vacant) || (!state.ok && state.no_vacant)) {
-                    list.push(get_intersection(letters[l], n));
+                    list.push(get_intersection(letters[l], n).coordinates());
                 }
                 ++l;
                 ++n;
@@ -140,7 +140,7 @@ Yinsh.Engine = function (type, color) {
                 l >= (Yinsh.begin_letter[n - 1].charCodeAt(0) - 'A'.charCodeAt(0)) && state.ok) {
                 state = verify_intersection(letters[l], n, state);
                 if ((state.ok && !state.no_vacant) || (!state.ok && state.no_vacant)) {
-                    list.push(get_intersection(letters[l], n));
+                    list.push(get_intersection(letters[l], n).coordinates());
                 }
                 --l;
                 --n;
