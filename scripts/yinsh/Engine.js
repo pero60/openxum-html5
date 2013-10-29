@@ -315,6 +315,7 @@ Yinsh.Engine = function (type, color) {
             return false;
         }
         phase = Yinsh.Phase.MOVE_RING;
+        turn_list.push("put "+(color==0?"black":"white")+" marker at " + coordinates.to_string());
         return true;
     };
 
@@ -342,6 +343,7 @@ Yinsh.Engine = function (type, color) {
             phase = Yinsh.Phase.PUT_MARKER;
         }
         change_color();
+        turn_list.push("put "+(color==0?"black":"white")+" ring at " + coordinates.to_string());
         return true;
     };
 
@@ -409,6 +411,10 @@ Yinsh.Engine = function (type, color) {
 
         //TODO: to finish
         return rows[0];
+    };
+
+    this.turn_list = function() {
+        return turn_list;
     };
 
     this.verify_moving = function (origin, destination) {
@@ -751,6 +757,7 @@ Yinsh.Engine = function (type, color) {
     var removed_black_ring_number = 0;
     var removed_white_ring_number = 0;
     var intersections = {};
+    var turn_list = [];
     var phase = Yinsh.Phase.PUT_RING;
     var letters = [ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K" ];
 

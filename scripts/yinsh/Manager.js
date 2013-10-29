@@ -1,3 +1,8 @@
+Yinsh.Status = function(markerNumber, turnList) {
+    this.markerNumber = markerNumber;
+    this.turnList = turnList;
+}
+
 Yinsh.Manager = function (engine, gui_player, other_player, status) {
 
 // public methods
@@ -34,7 +39,13 @@ Yinsh.Manager = function (engine, gui_player, other_player, status) {
             play_other();
             gui.draw();
         }
-        status.innerHTML = engine.available_marker_number();
+        status.markerNumber.innerHTML = engine.available_marker_number();
+        status.turnList.innerHTML = "";
+
+        var turn_list = engine.turn_list();
+        for (var i = 0; i < turn_list.length; ++i) {
+            status.turnList.innerHTML += turn_list[i] + "<br />";
+        }
     };
 
 // private methods
@@ -65,5 +76,5 @@ Yinsh.Manager = function (engine, gui_player, other_player, status) {
     var other = other_player;
     var status = status;
 
-    status.innerHTML = engine.available_marker_number();
+    status.markerNumber.innerHTML = engine.available_marker_number();
 };

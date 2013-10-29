@@ -25,6 +25,11 @@ Yinsh.Coordinates = function (l, n) {
         return number;
     };
 
+    this.to_string = function()
+    {
+        return letter + number;
+    };
+
 // private attributes
     var letter = l;
     var number = n;

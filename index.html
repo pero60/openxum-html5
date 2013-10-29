@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/openxum.css" />
     <script type="text/javascript" src="scripts/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.mobile.min.js"></script>
     <script type="text/javascript" src="scripts/yinsh/Yinsh.js"></script>
@@ -17,11 +18,12 @@
     <script type="text/javascript">
         window.onload = function () {
             var canvas = document.getElementById("board");
-            var status = document.getElementById("markerNumber");
+            var markerNumber = document.getElementById("markerNumber");
+            var turnList = document.getElementById("turnList");
             var engine = new Yinsh.Engine(Yinsh.GameType.BLITZ, Yinsh.Color.BLACK);
             var gui = new Yinsh.GuiPlayer(Yinsh.Color.BLACK, engine);
             var other = new Yinsh.RandomPlayer(Yinsh.Color.WHITE, engine);
-            var manager = new Yinsh.Manager(engine, gui, other, status);
+            var manager = new Yinsh.Manager(engine, gui, other, new Yinsh.Status(markerNumber, turnList));
 
             gui.set_canvas(canvas);
             gui.set_manager(manager);
@@ -45,7 +47,16 @@
     </div>
     <div data-role="content">
         <section class="ui-grid-a">
-            <div class="ui-block-a" style="width: 25%">Marker number: <span id="markerNumber"></span></div>
+            <div class="ui-block-a" style="width: 25%; height: 600px">
+                <table style="width: 100%; height: 100%;" >
+                    <tr style="height: 50px">
+                        <td style="width: 90px">Marker number</td><td><span id="markerNumber"></span></td>
+                    </tr>
+                    <tr style="vertical-align: top">
+                        <td>Turn list</td><td><span id="turnList"></span></td>
+                    </tr>
+                </table>
+            </div>
             <div class="ui-block-b">
                 <canvas id="board" width="600" height="600">
                 </canvas>
@@ -53,7 +64,7 @@
         </section>
     </div>
     <div data-role="footer">
-        <h4>www.openxum.org</h4>
+        <h4><a href="www.openxum.org">OpenXum project</a> - Copyright 2011-2014</h4>
     </div>
 </div>
 
