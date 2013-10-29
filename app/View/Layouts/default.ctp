@@ -76,7 +76,7 @@
         <?php echo $this->Session->flash(); ?>
         <?php echo $content_for_layout; ?>
     </div>
-    <div data-role="footer">
+    <div style="position: absolute; bottom: 0; width: 100%;" data-role="footer">
         <h4><a href="www.openxum.org">OpenXum project</a> - Copyright 2011-2014</h4>
     </div>
 </div>
