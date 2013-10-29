@@ -296,6 +296,8 @@ Yinsh.Engine = function (type, color) {
             placed_white_ring_coordinates.push(destination);
         }
         phase = Yinsh.Phase.REMOVE_ROWS_AFTER;
+        turn_list.push("move " + (color == 0 ? "black" : "white") + " ring from " +
+            origin.to_string() + " to " + destination.to_string());
         return true;
     };
 
@@ -315,7 +317,7 @@ Yinsh.Engine = function (type, color) {
             return false;
         }
         phase = Yinsh.Phase.MOVE_RING;
-        turn_list.push("put "+(color==0?"black":"white")+" marker at " + coordinates.to_string());
+        turn_list.push("put " + (color == 0 ? "black" : "white") + " marker at " + coordinates.to_string());
         return true;
     };
 
@@ -343,7 +345,7 @@ Yinsh.Engine = function (type, color) {
             phase = Yinsh.Phase.PUT_MARKER;
         }
         change_color();
-        turn_list.push("put "+(color==0?"black":"white")+" ring at " + coordinates.to_string());
+        turn_list.push("put " + (color == 0 ? "black" : "white") + " ring at " + coordinates.to_string());
         return true;
     };
 
@@ -369,6 +371,13 @@ Yinsh.Engine = function (type, color) {
         } else {
             phase = Yinsh.Phase.REMOVE_RING_BEFORE;
         }
+
+        var turn = "remove " + (color == 0 ? "black" : "white") + " row [ ";
+        for (var j = 0; j < row.length; ++j) {
+            turn += row[j].to_string() + " ";
+        }        
+        turn += "]";
+        turn_list.push(turn);
         return true;
     };
 
@@ -398,6 +407,7 @@ Yinsh.Engine = function (type, color) {
                 phase = Yinsh.Phase.PUT_MARKER;
             }
         }
+        turn_list.push("remove " + (color == 0 ? "black" : "white") + " ring at " + coordinates.to_string());
         return true;
     };
 
@@ -413,7 +423,7 @@ Yinsh.Engine = function (type, color) {
         return rows[0];
     };
 
-    this.turn_list = function() {
+    this.turn_list = function () {
         return turn_list;
     };
 
