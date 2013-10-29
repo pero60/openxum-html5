@@ -46,6 +46,12 @@ Yinsh.Manager = function (engine, gui_player, other_player, status) {
         for (var i = 0; i < turn_list.length; ++i) {
             status.turnList.innerHTML += turn_list[i] + "<br />";
         }
+
+        if (engine.is_finished()) {
+            confirm("The game is finished. The winner is " +
+                (engine.winner_is() == Yinsh.Color.BLACK ? "black" : "white"));
+        }
+
     };
 
 // private methods

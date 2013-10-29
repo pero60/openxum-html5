@@ -296,7 +296,7 @@ Yinsh.Engine = function (type, color) {
             placed_white_ring_coordinates.push(destination);
         }
         phase = Yinsh.Phase.REMOVE_ROWS_AFTER;
-        turn_list.push("move " + (color == 0 ? "black" : "white") + " ring from " +
+        turn_list.push("move " + (color == Yinsh.Color.BLACK ? "black" : "white") + " ring from " +
             origin.to_string() + " to " + destination.to_string());
         return true;
     };
@@ -317,7 +317,7 @@ Yinsh.Engine = function (type, color) {
             return false;
         }
         phase = Yinsh.Phase.MOVE_RING;
-        turn_list.push("put " + (color == 0 ? "black" : "white") + " marker at " + coordinates.to_string());
+        turn_list.push("put " + (color == Yinsh.Color.BLACK ? "black" : "white") + " marker at " + coordinates.to_string());
         return true;
     };
 
@@ -345,7 +345,7 @@ Yinsh.Engine = function (type, color) {
             phase = Yinsh.Phase.PUT_MARKER;
         }
         change_color();
-        turn_list.push("put " + (color == 0 ? "black" : "white") + " ring at " + coordinates.to_string());
+        turn_list.push("put " + (color == Yinsh.Color.BLACK ? "black" : "white") + " ring at " + coordinates.to_string());
         return true;
     };
 
@@ -372,10 +372,10 @@ Yinsh.Engine = function (type, color) {
             phase = Yinsh.Phase.REMOVE_RING_BEFORE;
         }
 
-        var turn = "remove " + (color == 0 ? "black" : "white") + " row [ ";
+        var turn = "remove " + (color == Yinsh.Color.BLACK ? "black" : "white") + " row [ ";
         for (var j = 0; j < row.length; ++j) {
             turn += row[j].to_string() + " ";
-        }        
+        }
         turn += "]";
         turn_list.push(turn);
         return true;
@@ -407,7 +407,8 @@ Yinsh.Engine = function (type, color) {
                 phase = Yinsh.Phase.PUT_MARKER;
             }
         }
-        turn_list.push("remove " + (color == 0 ? "black" : "white") + " ring at " + coordinates.to_string());
+        turn_list.push("remove " + (color == Yinsh.Color.BLACK ? "black" : "white") +
+            " ring at " + coordinates.to_string());
         return true;
     };
 
