@@ -10,7 +10,7 @@ echo $this->Html->script('yinsh/RandomPlayer');
 ?>
 
 <script language="javascript">
-    window.onload = function () {
+    $(document).ready(function () {
         var canvas = document.getElementById("board");
         var markerNumber = document.getElementById("markerNumber");
         var turnList = document.getElementById("turnList");
@@ -21,8 +21,9 @@ echo $this->Html->script('yinsh/RandomPlayer');
 
         gui.set_canvas(canvas);
         gui.set_manager(manager);
-    };
+    });
 </script>
+
 <section class="ui-grid-a">
     <div class="ui-block-a" style="width: 25%; height: 600px">
         <table style="width: 100%; height: 100%; table-layout: fixed;">
@@ -43,3 +44,5 @@ echo $this->Html->script('yinsh/RandomPlayer');
         </canvas>
     </div>
 </section>
+
+<a href="delete.html" data-role="button" style>New game</a>
