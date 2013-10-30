@@ -37,7 +37,7 @@
 
     echo $this->Html->css('openxum');
     echo $this->Html->css('jquery.mobile.min');
-
+    echo $this->Html->css('jquery.mobile.theme.min');
     echo $this->Html->script('jquery.min');
     echo $this->Html->script('jquery.mobile.min');
     echo $scripts_for_layout;
@@ -46,26 +46,25 @@
 <body>
 <div data-role="page">
     <div data-role="header">
-        <h1>OpenXum</h1>
-        <div data-role="navbar">
+        <div data-role="navbar" data-iconpos="right">
             <ul>
                 <li>
                     <?php
-                    echo $this->Html->link(__('Home'), array('controller' => 'pages', 'action' => 'display', 'home'));
+                    echo $this->Html->link(__('Home'), array('controller' => 'pages', 'action' => 'display', 'home'), array("data-icon" => "home"));
                     ?>
                 </li>
                 <li>
                     <?php
-                    echo $this->Html->link(__('Games'), array('controller' => 'pages', 'action' => 'display', 'games'));
+                    echo $this->Html->link(__('Games'), array('controller' => 'pages', 'action' => 'display', 'games'), array("data-icon" => "grid"));
                     ?>
                 </li>
-                <li><a href="c.html">Help</a></li>
+                <li><a href="c.html" data-icon="info">Help</a></li>
                 <li>
                     <?php
                     if (AuthComponent::user('id') != 0) {
                         echo $this->Html->link('logout', array('controller' => 'users', 'action' => 'logout')).' '.AuthComponent::user('username');
                     } else {
-                        echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login'));
+                        echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login'), array("data-icon" => "check"));
                     }
                     ?>
                 </li>

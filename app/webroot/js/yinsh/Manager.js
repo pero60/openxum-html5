@@ -48,8 +48,11 @@ Yinsh.Manager = function (engine, gui_player, other_player, status) {
         }
 
         if (engine.is_finished()) {
-            confirm("The game is finished. The winner is " +
-                (engine.winner_is() == Yinsh.Color.BLACK ? "black" : "white"));
+            var popup = document.getElementById("popupWinner");
+
+            popup.innerHTML = "<p>The game is finished. The winner is " +
+                (engine.winner_is() == Yinsh.Color.BLACK ? "black" : "white") + "</p>";
+            $( "#popupWinner").popup("open");
         }
 
     };
