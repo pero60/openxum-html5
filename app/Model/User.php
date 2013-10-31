@@ -17,7 +17,7 @@
  *
  * @copyright     Copyright (c) Eric Ramat
  * @link          http://github.com/openxum-team/openxum-html5
- * @package       app.Controller
+ * @package       app.Model
  * @license       http://www.gnu.org/licenses/ GPLv3 License
  */
 
