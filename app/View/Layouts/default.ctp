@@ -38,15 +38,17 @@
     echo $this->Html->css('openxum');
     echo $this->Html->css('jquery.mobile.min');
     echo $this->Html->css('jquery.mobile.theme.min');
+
     echo $this->Html->script('jquery.min');
     echo $this->Html->script('jquery.mobile.min');
+
     echo $scripts_for_layout;
     ?>
 </head>
 <body>
 <div data-role="page">
     <div data-role="header">
-        <div data-role="navbar" data-iconpos="right">
+        <div data-role="navbar" data-iconpos="right" data-grid="d">
             <ul>
                 <li>
                     <?php
@@ -58,26 +60,21 @@
                     echo $this->Html->link(__('Games'), array('controller' => 'pages', 'action' => 'display', 'games'), array("data-icon" => "grid"));
                     ?>
                 </li>
-                <li><a href="c.html" data-icon="info">Help</a></li>
+                <li><a href="#" data-icon="bars">Ranking</a></li>
+                <li><a href="#" data-icon="info">Help</a></li>
                 <li>
                     <?php
                     if (AuthComponent::user('id') != 0) {
-                        echo $this->Html->link('logout', array('controller' => 'users', 'action' => 'logout')).' '.AuthComponent::user('username');
+                        echo $this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout'), array("data-icon" => "check",  "class" => "ui-btn-active")).' '.AuthComponent::user('username');
                     } else {
-                        echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login'), array("data-icon" => "check"));
+                        echo $this->Html->link('Sign in', array('controller' => 'users', 'action' => 'login'), array("data-icon" => "check",  "class" => "ui-btn-active"));
                     }
                     ?>
                 </li>
             </ul>
         </div>
     </div>
-    <div data-role="content">
-        <?php echo $this->Session->flash(); ?>
-        <?php echo $content_for_layout; ?>
-    </div>
-    <div style="position: absolute; bottom: 0; width: 100%;" data-role="footer">
-        <h4><a href="www.openxum.org">OpenXum project</a> - Copyright 2011-2014</h4>
-    </div>
+    <?php echo $content_for_layout; ?>
 </div>
 </body>
 </html>
