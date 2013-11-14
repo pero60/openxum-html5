@@ -27,7 +27,7 @@ class UsersController extends AppController
     {
         parent::beforeFilter();
     }
-
+//ddede
     public function isAuthorized($user) {
         if (isset($user['role']) && $user['role'] === 'admin') {
             return true;
