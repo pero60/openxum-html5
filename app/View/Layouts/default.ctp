@@ -75,7 +75,9 @@
             </ul>
         </div>
     </div>
+    <?php echo $this->Session->Flash(); ?>
     <?php echo $content_for_layout; ?>
+
 </div>
 </body>
 </html>

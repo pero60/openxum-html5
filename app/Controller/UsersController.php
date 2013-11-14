@@ -27,7 +27,7 @@ class UsersController extends AppController
     {
         parent::beforeFilter();
     }
-//ddede
+
     public function isAuthorized($user) {
         if (isset($user['role']) && $user['role'] === 'admin') {
             return true;
@@ -110,5 +110,8 @@ class UsersController extends AppController
                 $this->Session->setFlash(__('Login ou mot de passe invalide, réessayer'));
             }
         }
+    }
+    public function account(){
+        $this->Session->setFlash(__('Login ou mot de passe invalide, réessayer'));
     }
 }

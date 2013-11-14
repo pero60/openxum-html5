@@ -8,4 +8,5 @@
         ?>
     </fieldset>
 <?php echo $this->Form->end(__('Sign in'));?>
+<?php echo $this->Html->link(__('Créer un compte'), array('controller' => 'users', 'action' => 'add')); ?>
 </div>

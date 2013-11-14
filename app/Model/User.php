@@ -38,10 +38,28 @@ class User extends AppModel {
                 'message' => 'Un mot de passe est requis'
             )
         ),
+        'password_verif' => array(
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'Un mot de passe est requis'
+            )
+        ),
         'role' => array(
             'valid' => array(
                 'rule' => array('inList', array('admin', 'student', 'professor', 'external', 'manager')),
                 'message' => 'Merci de rentrer un rôle valide',
+                'allowEmpty' => false
+            )
+        ),
+        'email' => array(
+            'valid' => array(
+                'rule' => 'mail',
+                'allowEmpty' => false
+            )
+        ),
+        'email_verif' => array(
+            'valid' => array(
+                'rule' => 'mail',
                 'allowEmpty' => false
             )
         )
