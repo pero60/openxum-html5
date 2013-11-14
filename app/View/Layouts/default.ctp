@@ -69,9 +69,6 @@
                     } else {
                         echo $this->Html->link('Sign in', array('controller' => 'users', 'action' => 'login'), array("data-icon" => "check",  "class" => "ui-btn-active"));
                     }
-
-
-                    
                     ?>
                 </li>
             </ul>
