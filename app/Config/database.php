@@ -78,7 +78,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-        'password' => 'toto',
+        'password' => '',
 		'database' => 'openxum',
 		'prefix' => '',
 		//'encoding' => 'utf8',
