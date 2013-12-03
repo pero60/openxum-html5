@@ -51,20 +51,21 @@ class UsersController extends AppController
 
     public function add()
     {
-
         if ($this->request->is('post')) {
-            $this->User->create();
-            $user = $this->User->save($this->request->data);
-            unset($this->request->data['User']['password_verif']);
-            unset($this->request->data['User']['email_verif']);
-            var_dump($this->request);die;
-            if ($this->User->save($this->request->data)) {
+            $d = $this->request->data;
+            $d['User']['id'] = null;
+            if($d['User']['password']!=$d['User']['password_verif'])
+                $this->Session->setFlash('Les mots de passe doivent être identique');
+            elseif($d['User']['email']!=$d['User']['email_verif'])
+                $this->Session->setFlash('Les emails doivent être identique');
 
-                $this->Session->setFlash(__('L\'utilisateur a été sauvegardé'));
-                return $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('L\'utilisateur n\'a pas été sauvegardé. Merci de réessayer.'));
-            }
+                $this->User->create();
+                if ($this->User->save($this->request->data)) {
+                    $this->Session->setFlash(__('L\'utilisateur a été sauvegardé'));
+                    return $this->redirect(array('action' => 'index'));
+                } else {
+                    $this->Session->setFlash(__('L\'utilisateur n\'a pas été sauvegardé. Merci de réessayer.'));
+                }
         }
     }
 

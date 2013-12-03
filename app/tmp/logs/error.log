@@ -1,0 +1,1514 @@
+2013-11-14 10:40:26 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:40:28 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:40:28 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:40:30 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:40:33 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:33 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:33 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:34 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:34 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:34 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:34 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:34 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:35 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:35 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:35 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:35 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:35 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:36 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:36 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:36 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:36 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:36 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:37 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:37 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:41:37 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:42:28 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:42:30 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:42:33 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:42:43 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3288): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#11 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#12 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#13 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#17 {main}
+2013-11-14 10:43:48 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#8 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#13 {main}
+2013-11-14 10:43:49 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#8 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#13 {main}
+2013-11-14 10:44:27 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#8 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#13 {main}
+2013-11-14 10:44:27 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#8 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#13 {main}
+2013-11-14 10:44:27 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#8 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#13 {main}
+2013-11-14 10:44:29 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#8 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#13 {main}
+2013-11-14 10:44:30 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#8 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#13 {main}
+2013-11-14 10:44:30 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#8 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#13 {main}
+2013-11-14 10:44:36 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('users')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#8 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#13 {main}
+2013-11-14 10:47:53 Error: [MissingTableException] Table  for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => '',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(3310): Model->setSource('')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\Helper\FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp(3): FormHelper->create('User')
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(931): include('C:\wamp\www\ope...')
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(893): View->_evaluate('C:\wamp\www\ope...', Array)
+#7 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(462): View->_render('C:\wamp\www\ope...')
+#8 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#10 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#13 {main}
+2013-11-14 12:14:13 Error: [MissingControllerException] Controller class OpenxumController could not be found.
+Exception Attributes: array (
+  'class' => 'OpenxumController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/openxum/openxum-html5/
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 12:38:33 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\wamp\www\openxum\openxum-html5\app\View\Users\login.ctp, line 11]
+2013-11-14 12:38:33 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\ope...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\ope...', 11, Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\ope...', 11, Array)
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 12:38:52 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 12:57:50 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/display/sign-in
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 12:59:19 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 12:59:37 Error: [MissingActionException] Action UsersController::account() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'account',
+)
+Request URL: /openxum/openxum-html5/index.php/users/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 12:59:42 Error: [MissingActionException] Action UsersController::account() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'account',
+)
+Request URL: /openxum/openxum-html5/index.php/users/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:00:28 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:00:29 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:00:30 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:00:30 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:01:01 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:01:53 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:02:07 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:02:39 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:02:41 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:03:21 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:03:47 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:04:04 Error: [NotFoundException] Utilisateur invalide
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 [internal function]: UsersController->view('login')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#6 {main}
+2013-11-14 13:04:06 Error: [NotFoundException] Utilisateur invalide
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 [internal function]: UsersController->view('login')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#6 {main}
+2013-11-14 13:04:51 Error: [MissingActionException] Action UsersController::account() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'account',
+)
+Request URL: /openxum/openxum-html5/index.php/users/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:04:52 Error: [MissingActionException] Action UsersController::account() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'account',
+)
+Request URL: /openxum/openxum-html5/index.php/users/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:04:53 Error: [MissingActionException] Action UsersController::account() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'account',
+)
+Request URL: /openxum/openxum-html5/index.php/users/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:10:34 Error: [MissingViewException] View file "C:\wamp\www\openxum\openxum-html5\app\View\Pages\account.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\openxum\\openxum-html5\\app\\View\\Pages\\account.ctp',
+)
+Request URL: /openxum/openxum-html5/index.php/pages/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(459): View->_getViewFileName('account')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render('account', NULL)
+#2 C:\wamp\www\openxum\openxum-html5\app\Controller\PagesController.php(58): Controller->render('account')
+#3 [internal function]: PagesController->display('account')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#9 {main}
+2013-11-14 13:11:05 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:13:18 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:16:18 Error: [MissingViewException] View file "C:\wamp\www\openxum\openxum-html5\app\View\Pages\account.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\openxum\\openxum-html5\\app\\View\\Pages\\account.ctp',
+)
+Request URL: /openxum/openxum-html5/index.php/pages/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(459): View->_getViewFileName('account')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render('account', NULL)
+#2 C:\wamp\www\openxum\openxum-html5\app\Controller\PagesController.php(58): Controller->render('account')
+#3 [internal function]: PagesController->display('account')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#9 {main}
+2013-11-14 13:16:25 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 13:16:26 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 13:16:26 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 13:20:49 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 13:20:50 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 13:20:50 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 13:20:51 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 13:20:51 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 13:20:51 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 13:20:52 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/user/display/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-11-14 13:40:06 Error: [MissingViewException] View file "C:\wamp\www\openxum\openxum-html5\app\View\Pages\account.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\openxum\\openxum-html5\\app\\View\\Pages\\account.ctp',
+)
+Request URL: /openxum/openxum-html5/index.php/pages/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(459): View->_getViewFileName('account')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render('account', NULL)
+#2 C:\wamp\www\openxum\openxum-html5\app\Controller\PagesController.php(58): Controller->render('account')
+#3 [internal function]: PagesController->display('account')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#9 {main}
+2013-11-14 13:40:07 Error: [MissingViewException] View file "C:\wamp\www\openxum\openxum-html5\app\View\Pages\account.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\openxum\\openxum-html5\\app\\View\\Pages\\account.ctp',
+)
+Request URL: /openxum/openxum-html5/index.php/pages/account
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\View\View.php(459): View->_getViewFileName('account')
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(952): View->render('account', NULL)
+#2 C:\wamp\www\openxum\openxum-html5\app\Controller\PagesController.php(58): Controller->render('account')
+#3 [internal function]: PagesController->display('account')
+#4 C:\wamp\www\openxum\openxum-html5\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#9 {main}
+2013-11-14 13:49:42 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 13:49:42 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-11-14 14:32:46 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\wamp\www\openxum\openxum-html5\app\Controller\UsersController.php, line 75]
+2013-11-14 14:32:46 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /openxum/openxum-html5/index.php/users/add
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\ope...', 75)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\ope...', 75, Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\ope...', 75, Array)
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-14 14:34:54 Error: Fatal Error (1): Call to undefined function vardump() in [C:\wamp\www\openxum\openxum-html5\app\Controller\UsersController.php, line 56]
+2013-11-14 14:34:54 Error: [FatalErrorException] Call to undefined function vardump()
+Request URL: /openxum/openxum-html5/index.php/users/add
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\ope...', 56)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\ope...', 56, Array)
+#2 C:\wamp\www\openxum\openxum-html5\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\ope...', 56, Array)
+#3 C:\wamp\www\openxum\openxum-html5\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-03 08:18:03 Error: [MissingControllerException] Controller class OpenxumController could not be found.
+Exception Attributes: array (
+  'class' => 'OpenxumController',
+  'plugin' => NULL,
+)
+Request URL: /openxum/openxum-html5/index.php/openxum/openxum-html5/
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#2 {main}
+2013-12-03 08:23:49 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/add
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-12-03 08:26:22 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/add
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
+2013-12-03 08:26:25 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /openxum/openxum-html5/index.php/users/login
+Stack Trace:
+#0 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\openxum\openxum-html5\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\openxum\openxum-html5\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\wamp\www\openxum\openxum-html5\index.php(43): require('C:\wamp\www\ope...')
+#4 {main}
