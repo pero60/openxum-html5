@@ -51,9 +51,15 @@ class UsersController extends AppController
 
     public function add()
     {
+
         if ($this->request->is('post')) {
             $this->User->create();
+            $user = $this->User->save($this->request->data);
+            unset($this->request->data['User']['password_verif']);
+            unset($this->request->data['User']['email_verif']);
+            var_dump($this->request);die;
             if ($this->User->save($this->request->data)) {
+
                 $this->Session->setFlash(__('L\'utilisateur a été sauvegardé'));
                 return $this->redirect(array('action' => 'index'));
             } else {

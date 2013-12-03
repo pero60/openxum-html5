@@ -84,14 +84,4 @@ class DATABASE_CONFIG {
 		//'encoding' => 'utf8',
 	);
 
-	var $test = array(
-		'database' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => 'toto',
-		'database' => 'openxum_test',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
 }
